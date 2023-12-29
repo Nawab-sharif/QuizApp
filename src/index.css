@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* CSS reset */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3aaccb;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-height: 400px;
+  width: 450px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 2px 2px 10px 1px #333;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+}
+
+.heading-text{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 4px 2px 0px #292d2d;
+}
+
+.question{
+  margin: 8px;
+  box-shadow: 0px 0px 10px 1px #a2a3a3;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: large;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 100%;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#question-number{
+  margin-right: 5px;
+}
+
+.option-container{
+  display: flex;
+  flex-direction: column;
+  margin: 6px 4px;
+  width: 100%;
+  padding: 10px;
+}
+
+.option-btn{
+  box-shadow: 0px 0px 4px 1px rgb(128,123,123);
+  padding: 5px;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  transition: 0.3s;
+  margin: 5px;
+  min-height: 30px;
+  background-color: white;
+}
+
+.checked{
+  background-color: rgb(146, 48, 146);
+  color: white;
+  box-shadow: 3px 3px 4px 1px rgb(78,69,78);
+}
+
+.option-btn:hover{
+  background-color: rgb(188, 87, 188);
+  color: white;
+}
+
+#next-button{
+  padding: 10px;
+  border: none;
+  background-color: purple;
+  background-color: #276272;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px 1px rgb(127,109,109);
+  font-size: larger;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transition: 0.2s;
+  width: 100px;
+  position: absolute;
+  bottom: 15px;
+}
+
+#next-button:active{
+  box-shadow: none;
+}
+
+.show-score{
+  position: absolute;
+  top: 30%;
+  font-size: 40px;
+  text-align: center;
+  color: purple;
 }
