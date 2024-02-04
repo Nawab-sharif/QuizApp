@@ -79,9 +79,9 @@ export const QuizData = [
         options:[
             "jQuery in React",
             "Angular Code in React",
-            "MySQL in React",
-            "HTML in React"],
-        answer:4
+            "HTML in React",
+            "MySQL in React"],
+        answer:3
     },  
     {
         quetion:"What is the correct syntax to write expression in JSX?",
